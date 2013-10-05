@@ -29,7 +29,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('*', function(req, res){
-  res.redirect('http://tumblr.com/dashboard');
+  res.redirect('http://www.tumblr.com/dashboard');
   keen.addEvent("applaunch", {"count": 1}, function(err, res) {
     if(err){
       consoloe.log("keen error");
